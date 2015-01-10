@@ -1,0 +1,42 @@
+	####
+	# Vapro Conf
+	#
+	# Easily configure databases and other services for your Vaprobash VM.
+	##########
+
+	vaproconf_username     = "rtablada"
+	vaproconf_repo         = "Vaproconf"
+	vaproconf_branch       = "master"
+	vaproconf_url          = "https://raw.githubusercontent.com/#{vaproconf_username}/#{vaproconf_repo}/#{vaproconf_branch}"
+
+	# MySQL Configuration
+	mysql_database_name    = "database"
+	mysql_user             = "user"
+	mysql_pass             = "pass"
+
+	# Postgres Configuration
+	postgres_database_name = "database"
+	postgres_user          = "user"
+	postgres_pass          = "pass"
+
+	# MongoDb Configuration
+	mongodb_database_name  = "database"
+	mongodb_user           = "user"
+	mongodb_pass           = "pass"
+
+	# Nginx Override
+	nginx_site_file_path   = "/vagrant/_provisioning/vagrant"
+
+	# Configure MySQL
+	# config.vm.provision "shell", path: "#{vaproconf_url}/scripts/mysql.sh", args: [mysql_root_password, mysql_database_name, mysql_user, mysql_pass]
+
+	# Configure Postgres
+	# config.vm.provision "shell", path: "#{vaproconf_url}/scripts/pgsql.sh", args: [pgsql_database_name, pgsql_user, pgsql_pass]
+
+	# Configure MongoDB
+	# config.vm.provision "shell", path: "#{vaproconf_url}/scripts/mongodb.sh", args: [mongodb_database_name, mongodb_user, mongodb_pass]
+
+	# Override Nginx Site Config
+	# config.vm.provision "shell", path: "#{vaproconf_url}/scripts/nginx.sh", args: [nginx_site_file_path]
+
+end

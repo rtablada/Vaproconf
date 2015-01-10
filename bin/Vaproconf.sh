@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sed "s/end//" Vagrantfile > test
+sed "s/end//" Vagrantfile > Vagrantfile
 
-curl -L http://bit.ly/Vaproconf >> test
+curl -L http://bit.ly/Vaproconf >> Vagrantfile

@@ -15,9 +15,9 @@
 	mysql_pass             = "pass"
 
 	# Postgres Configuration
-	postgres_database_name = "database"
-	postgres_user          = "user"
-	postgres_pass          = "pass"
+	pgsql_database_name = "database"
+	pgsql_user          = "user"
+	pgsql_pass          = "pass"
 
 	# MongoDb Configuration
 	mongodb_database_name  = "database"

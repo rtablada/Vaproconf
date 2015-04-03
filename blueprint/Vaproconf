@@ -26,6 +26,7 @@
 
 	# Nginx Override
 	nginx_site_file_path   = "/vagrant/_provisioning/vagrant"
+	nginx_new_site_name = "vagrant"
 
 	# Configure MySQL
 	# config.vm.provision "shell", path: "#{vaproconf_url}/scripts/mysql.sh", args: [mysql_root_password, mysql_database_name, mysql_user, mysql_pass]
@@ -37,6 +38,6 @@
 	# config.vm.provision "shell", path: "#{vaproconf_url}/scripts/mongodb.sh", args: [mongodb_database_name, mongodb_user, mongodb_pass]
 
 	# Override Nginx Site Config
-	# config.vm.provision "shell", path: "#{vaproconf_url}/scripts/nginx.sh", args: [nginx_site_file_path]
+	# config.vm.provision "shell", path: "#{vaproconf_url}/scripts/nginx.sh", args: [nginx_site_file_path, nginx_new_site_name]
 
 end

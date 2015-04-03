@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sed 's/end//' Vagrantfile > Vaproconf
+sed 's/^end//' Vagrantfile > Vaproconf
 
 curl -L http://bit.ly/Vaproconf >> Vaproconf
 
